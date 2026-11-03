@@ -22,7 +22,7 @@
   <div class="wrap">
     <a class="back" href="/">Xfive marketing</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: August 23, 2026</p>
+    <p class="updated">Last updated: November 3, 2026</p>
 
     <h2>What we collect</h2>
     <p>Xfive marketing uses Supabase to provide authentication, profiles, marketplace tasks, chats, portfolios and courses. Depending on what you choose to use, we may store:</p>
@@ -36,10 +36,10 @@
 
     <h2>What we do not collect</h2>
     <ul>
-      <li>No tracking identifiers and no App Tracking Transparency tracking.</li>
-      <li>No location, contacts, health data or advertising profiles.</li>
+      <li>No tracking identifiers unless you allow tracking in the App Tracking Transparency prompt (see "Ad measurement" below).</li>
+      <li>No location, contacts or health data.</li>
       <li>No biometric or face data.</li>
-      <li>No third-party advertising SDKs.</li>
+      <li>No email, name or phone number is sent to Meta.</li>
     </ul>
 
     <h2>Why we ask for permissions</h2>
@@ -55,12 +55,17 @@
     <p>AI requests are sent through our Supabase Edge Functions only when you start the corresponding feature. OpenAI processes Startup Chat, Live Fruits storyboards and primary automated safety checks. Google Gemini and BytePlus ModelArk may process AI-video prompts or selected reference media only as failover safety classifiers. BytePlus ModelArk Seedance processes accepted AI Video requests. MiniMax Speech processes requested AI Voice text. AI-video inputs and results and generated voice audio are stored privately; the app receives short-lived signed links.</p>
     <p>Video prompts are screened automatically for prohibited content before an AI-video credit reservation and are also subject to the provider's safety controls. Prohibited requests are rejected; definitive provider failures return the reserved credits.</p>
 
+    <h2>Ad measurement (Meta SDK, iOS)</h2>
+    <p>The iOS app uses the Meta (Facebook) SDK to measure which of our ads lead to installs and to log app events such as app launch, registration and purchase. The advertising identifier (IDFA) is used for tracking only if you allow it in Apple's App Tracking Transparency prompt. If you decline, no IDFA is collected and Meta measures our ads only in aggregated form through Aggregated Event Measurement and Apple's SKAdNetwork. You can change this anytime in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+    <p lang="ru">Приложение для iOS использует Meta (Facebook) SDK, чтобы понимать, какая реклама приводит установки, и отправлять события приложения: запуск, регистрацию, покупку. Отслеживание по рекламному идентификатору (IDFA) включается только если вы разрешили его в запросе App Tracking Transparency. Если не разрешили — IDFA не собирается, Meta видит только обобщённую статистику (Aggregated Event Measurement и SKAdNetwork Apple). Изменить решение можно в Настройках iOS → Конфиденциальность → Отслеживание.</p>
+
     <h2>Sharing</h2>
     <p>We do not sell or rent personal information. Service providers process data only to run the app:</p>
     <ul>
       <li>Apple for Sign in with Apple, StoreKit purchases and optional Face ID authentication.</li>
       <li>Google for Google sign-in if you choose it and Gemini failover safety classification for AI-video inputs.</li>
       <li>Supabase for authentication, database and storage.</li>
+      <li>Meta Platforms for iOS ad measurement and app events (tracking only with your App Tracking Transparency permission).</li>
       <li>OpenAI for requested Startup Chat and Live Fruits responses, image generation where selected, and automated safety moderation.</li>
       <li>BytePlus ModelArk for failover safety classification and Seedance AI Video only when you choose to submit a video-generation request.</li>
       <li>MiniMax Speech for AI Voice only when you choose to submit voice-generation text.</li>
